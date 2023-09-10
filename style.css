@@ -10,8 +10,8 @@
   visibility: hidden;
 }
 }
-::-webkit-scrollbar {
-display: none;
+body::-webkit-scrollbar {
+display: none !important;
 }
 :root {
     --blue: #007bff;
@@ -189,7 +189,7 @@ body{
     width: 100%;
     height: auto;
     display: flex;
-    align-items: center;
+    align-items: self-start;
     justify-content: start;
     font-size: 30px;
 }
@@ -203,9 +203,10 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: self-start;
-    justify-content: space-between;
+    align-items: center;
     padding: 10px 30px;
+    justify-content: center;
+    color: white;
 
 }
 .main-header h4{
@@ -269,6 +270,9 @@ body{
     display: flex;
     grid-template-columns: repeat(1, 1fr);/
 }
+.flex-container::-webkit-scrollbar {
+    display: none !important;
+    }
 .rating{
     position: absolute;
     top: 8px;
@@ -277,3 +281,85 @@ body{
     padding: 0px 8px ;
     border-radius: 10px 0px 0px 10px;
 }
+.thought {
+    display:flex;
+    background-color:#0f2036;
+    padding:20px;
+    border-radius:30px;
+     width:100%;
+    min-height:40px;
+    margin:20px;
+    position:relative;
+    align-items:self-start;
+    flex-direction: column;
+    justify-content:center;
+    text-align:center;
+  }
+  .thought:before,
+  .thought:after {
+    content:"";
+    background-color:#0f2036;
+    border-radius:50%;
+    display:block;
+    position:absolute;
+    z-index:-1;
+  }
+  .thought:before {
+    width:44px;
+    height:44px;
+    top:-12px;
+    left:28px;
+    box-shadow:-50px 30px 0 -12px #0f2036;
+  }
+  .thought:after {
+    bottom:-10px;
+    right:26px;
+    width:30px;
+    height:30px;
+    box-shadow:40px -34px 0 0 #0f2036,
+               -28px -6px 0 -2px #0f2036,
+               -24px 17px 0 -6px #0f2036,
+               -5px 25px 0 -10px #0f2036;
+    
+  }
+  .faq-section {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 15px;
+    height: auto;
+  }
+  .faq-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .faq-item {
+    border-bottom: 1px solid #cccccc5e;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .answer {
+    margin-top: 5px;
+    color: #666;
+    display: none;
+    font-size: 13px;
+  }
+  .answer a{
+    color: var(--blue) !important;
+  }
+  footer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
