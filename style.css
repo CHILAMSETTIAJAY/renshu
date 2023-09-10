@@ -123,7 +123,7 @@ body{
     border-bottom: 1px solid #EEE;
 }
 .active{
-    font-size: 14px;
+    /* font-size: 14px; */
     width: 100%;
     cursor: pointer;
     line-height: 1.14285714;
@@ -211,7 +211,7 @@ body{
 
 }
 .main-header p{
-    font-size: 14px;
+    /* font-size: 14px; */
     opacity: 0.8;
 }
 .trending h1{
@@ -261,7 +261,7 @@ body{
 .course-info p{
     text-align: center;
     padding: 0px 10px;
-    font-size: 14px;
+    /* font-size: 15px; */
 }
 .flex-container {
     width: 100vw;
@@ -335,7 +335,7 @@ body{
     font-family: var(--font-family--3);
     text-align: center;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
   }
   .faq-item {
@@ -348,7 +348,7 @@ body{
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    font-size: 15px;
+    /* font-size: 16px; */
   }
   .answer {
     margin-top: 5px;
