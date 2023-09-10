@@ -4,6 +4,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: var(--font-family--3) !important;
 }
 @media print {
  * {
@@ -209,8 +210,9 @@ body{
     color: white;
 
 }
-.main-header h4{
+.main-header p{
     font-size: 14px;
+    opacity: 0.8;
 }
 .trending h1{
     font-size: 20px;
@@ -330,6 +332,7 @@ body{
     height: auto;
   }
   .faq-section h2{
+    font-family: var(--font-family--3);
     text-align: center;
     margin-bottom: 20px;
     font-size: 18px;
