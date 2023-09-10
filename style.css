@@ -376,7 +376,6 @@ body{
     grid-template-columns: repeat(1, 1fr); /* Two columns */
     width: 100%; /* Set a maximum width for the grid container */
     margin: 0 auto; /* Center the grid container horizontally */
-    border-radius: 100px 0px 0px 0px;
     background-color: #0f2036;
 }
 
@@ -386,8 +385,6 @@ body{
     width: 100%;
     padding: 40px 20px;
     text-align: center;
-    position: relative;
-    top: 20px;
 
 }
 .grid-item h3{
