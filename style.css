@@ -135,7 +135,38 @@ body{
 .dropdown-divider{
     background-color: #b8b8b8 !important;
 }
-#section2 P,h1 , .singup-btn #section6 a {
+.main-heading {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: self-start;
+    justify-content: start;
+    font-size: 30px;
+}
+.main-heading h1{
+    position: relative;
+    top: 6px;
+    font-size: 22px;
+}
+.main-header{
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+    justify-content: center;
+    color: white;
+
+}
+.main-header p{
+    /* font-size: 14px; */
+    opacity: 0.8;
+}
+#section2 P,h1 , .singup-btn {
     font-family: var(--font-family--3);
   }
   #section2 P{
@@ -152,10 +183,10 @@ body{
   .hero-section {
     height: auto;
     position: relative;
-    top: 30px;
+    top: 50px;
     text-align: center;
     margin-top: 0px;
-    padding: 40px 40px 0px 40px;
+    padding: 0px 40px 40px 40px;
 }
 .hero-section h1{
     font-weight: 600;
@@ -185,35 +216,7 @@ body{
     width: 103%;
     mix-blend-mode:multiply;
 }
-.main-heading {
-    text-align: center;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: self-start;
-    justify-content: start;
-    font-size: 30px;
-}
-.main-heading h1{
-    position: relative;
-    top: 6px;
-    font-size: 22px;
-}
-.main-header{
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 30px;
-    justify-content: center;
-    color: white;
 
-}
-.main-header p{
-    /* font-size: 14px; */
-    opacity: 0.8;
-}
 .trending h1{
     font-size: 20px;
     font-weight: 600;
@@ -230,6 +233,7 @@ body{
 }
 .trend-pic{
     width: 100%;
+    padding: 20px;
 }
 
 .card{
@@ -366,3 +370,40 @@ body{
     align-items: center;
     justify-content: center;
   }
+  /* Define a grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Two columns */
+    width: 100%; /* Set a maximum width for the grid container */
+    margin: 0 auto; /* Center the grid container horizontally */
+    
+}
+
+/* Style for grid items */
+.grid-item {
+    color: white;
+    width: 100%;
+    padding: 20px 20px 40px 20px;
+    background-color: #0f2036;
+    border-top: 1px solid #cccccc75;
+    text-align: center;
+
+}
+.grid-item h3{
+    font-size: 20px;
+}
+.grid-item p{
+    opacity: 0.7;
+    font-weight: 100 !important;
+
+}
+.share{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.copy{
+    margin-top: 20px;
+}
