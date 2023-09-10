@@ -177,7 +177,7 @@ body{
     font-size: 13px;
   }
   #section2 .singup-btn {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 1px;
   }
   .hero-section {
@@ -376,17 +376,18 @@ body{
     grid-template-columns: repeat(1, 1fr); /* Two columns */
     width: 100%; /* Set a maximum width for the grid container */
     margin: 0 auto; /* Center the grid container horizontally */
-    
+    border-radius: 100px 0px 0px 0px;
+    background-color: #0f2036;
 }
 
 /* Style for grid items */
 .grid-item {
     color: white;
     width: 100%;
-    padding: 20px 20px 40px 20px;
-    background-color: #0f2036;
-    border-top: 1px solid #cccccc75;
+    padding: 40px 20px;
     text-align: center;
+    position: relative;
+    top: 20px;
 
 }
 .grid-item h3{
